@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import BeholdWall from '../components/instagram/BeholdWall';
+import BeholdEmbed from '../components/BeholdEmbed';
 import Header from '../components/layout/Header';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
             <Container className="p-3">
                 <Row>
                     <Col sm={{ offset: 1, span: 10 }}>
-                        <BeholdWall />
+                        <BeholdEmbed />
                     </Col>
                 </Row>
             </Container>
