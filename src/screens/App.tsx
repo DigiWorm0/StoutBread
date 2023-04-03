@@ -1,6 +1,7 @@
-import { Col, Container, Row } from 'react-bootstrap';
-import BeholdEmbed from '../components/BeholdEmbed';
-import Header from '../components/layout/Header';
+import Header from "../components/layout/Header";
+import { Col, Container, Row } from "react-bootstrap";
+import BeholdEmbed from "../components/instagram/BeholdEmbed";
+import AdvertModal from "../components/modals/AdvertModal";
 
 function App() {
     return (

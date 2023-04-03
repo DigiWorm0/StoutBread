@@ -26,8 +26,9 @@ export default function NavButton(props: NavButtonProps) {
                 }}
             >
                 {props.icon}
-                <span className="ms-1" />
-                {props.name}
+                <span className="ms-1 d-none d-sm-inline">
+                    {props.name}
+                </span>
             </Nav.Link>
         </Nav.Item >
     );
