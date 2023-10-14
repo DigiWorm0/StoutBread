@@ -1,6 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&zdisplay=swap');
+@import "react-image-gallery/styles/css/image-gallery.css";
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
 body {
     margin: 0;
-    font-family: 'Quicksand', sans-serif !important;
+    min-height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --bs-primary: rgb(var(--bs-primary-rgb));
+    --bs-primary-rgb: 40, 128, 254;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.nav-link-anim {
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.nav-link-anim::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link-anim:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-muted {
+    color: #aaa;
+    background-color: transparent;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn-muted:hover {
+    color: #fff;
+    background-color: transparent;
 }
