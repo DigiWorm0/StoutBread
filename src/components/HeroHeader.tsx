@@ -12,13 +12,12 @@ export default function HeroHeader() {
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                padding: 80,
-                paddingBottom: 120,
                 color: "white",
             }}
+            className={"ps-md-5 pe-md-5 pb-5 pt-5"}
         >
             <Container>
-                <div className={"d-flex flex-row text-center text-lg-start"}>
+                <div className={"d-flex flex-row text-center text-lg-start mt-md-4"}>
                     <div className={"m-auto m-lg-0"}>
                         <img
                             src="/images/Logo.png"
@@ -34,7 +33,7 @@ export default function HeroHeader() {
                         <a href={"#posts"} className={"nav-link-anim m-3"}>Posts</a>
                     </div>
                 </div>
-                <Container className={"ms-lg-3 mt-4"}>
+                <Container className={"ms-lg-3 mt-4 mb-md-5"}>
                     <Row>
                         <Col className={"text-center text-lg-start"}>
                             <h1>
