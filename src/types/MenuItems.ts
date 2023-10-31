@@ -26,13 +26,13 @@ const MenuItems: MenuItem[] = [
             {
                 id: "BananaBread",
                 name: "Plain 🍞",
-                customPrice: "$3 Mini-Loaf • $10 Whole Loaf: Hallo-Weekend Sale!",
+                //customPrice: "$3 Mini-Loaf • $10 Whole Loaf: Hallo-Weekend Sale!",
                 description: "Indulge in the ultimate treat with our mouthwatering banana bread! Made fresh right here at UW-Stout, this moist and flavorful delight is the perfect pick-me-up for busy students. Packed with real bananas and love, it's a delicious slice of home away from home.",
             },
             {
                 id: "ChocolateChip",
                 name: "Chocolate Chip 🍫",
-                customPrice: "$3 Mini-Loaf • $10 Whole Loaf: Hallo-Weekend Sale!",
+                //customPrice: "$3 Mini-Loaf • $10 Whole Loaf: Hallo-Weekend Sale!",
                 description: "Savor the best of both worlds with our delectable Chocolate Chip Banana Bread. Freshly baked here on campus, it's a delightful fusion of rich chocolate chips and ripe bananas. The perfect on-the-go snack for any student's sweet cravings.",
             },
             {
