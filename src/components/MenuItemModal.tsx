@@ -101,32 +101,19 @@ export default function MenuItemModal(props: MenuItemModalProps) {
                                     {/* Product Description */}
                                     <Col>
                                         {selectedType?.description}
-                                        <br />
-                                        <br />
-                                        <a
-                                            href={nutritionURL}
-                                            target={"_blank"}
-                                        >
-                                            Nutritional Information
-                                        </a>
+                                        {!selectedType?.noNutrition && (
+                                            <>
+                                                <br />
+                                                <br />
+                                                <a
+                                                    href={nutritionURL}
+                                                    target={"_blank"}
+                                                >
+                                                    Nutritional Information
+                                                </a>
+                                            </>
+                                        )}
                                     </Col>
-
-                                    {/* Nutrition Facts */}
-                                    {/*
-                                    <Col md={6} lg={5} xl={4} style={{ textAlign: "center" }}>
-                                        <LazyImage
-                                            key={selectedType?.id}
-                                            src={nutritionURL}
-                                            alt={selectedType?.name}
-                                            className={"img-fluid p-2"}
-                                            onClick={() => window.open(nutritionURL, "_blank")}
-                                            style={{
-                                                minHeight: 200,
-                                                cursor: "pointer",
-                                            }}
-                                        />
-                                    </Col>
-                                    */}
                                 </Row>
                                 <Row>
                                     <Col>
