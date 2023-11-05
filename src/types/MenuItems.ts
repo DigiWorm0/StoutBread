@@ -9,6 +9,7 @@ export interface MenuItem {
         name: string;
         description: React.ReactNode;
         customPrice?: string;
+        noNutrition?: boolean;
     }[];
     images: {
         id: string;
@@ -132,6 +133,24 @@ const MenuItems: MenuItem[] = [
         ],
         images: [
             { id: "Pumpkin", type: "Pumpkin" },
+        ],
+    },
+    {
+        id: "Zucchini",
+        name: "Zucchini 🥒",
+        tagline: "New Flavor!",
+        shortDescription: "A fruity taste of Wisconsin",
+        types: [
+            {
+                id: "Zucchini",
+                name: "Pumpkin Cream Cheese 🎃",
+                customPrice: "$4 Mini • $14 Regular Loaf",
+                description: "Zucchini Bread NOW AVAILABLE. Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
+                noNutrition: true,
+            }
+        ],
+        images: [
+            { id: "Zucchini", type: "Zucchini" },
         ],
     },
 ];
