@@ -1,13 +1,13 @@
 import { Button, Col, Container, Modal, Row } from "react-bootstrap";
 import { AiOutlineClose } from "react-icons/ai";
-import { MenuItem } from "../types/MenuItems.ts";
 import { MINI_LOAF_PRICE, WHOLE_LOAF_PRICE } from "../types/Constants.ts";
 import React from "react";
 import ItemTypePicker from "./ItemTypePicker.tsx";
 import ItemGallery from "./ItemGallery.tsx";
+import ShopItem from "../types/ShopItem.ts";
 
 export interface MenuItemModalProps {
-    item: MenuItem;
+    item: ShopItem;
     isVisible: boolean;
     setIsVisible: (isVisible: boolean) => void;
 }

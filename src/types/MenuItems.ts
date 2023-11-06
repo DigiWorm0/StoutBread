@@ -1,23 +1,6 @@
-export interface MenuItem {
-    id: string;
-    name: string;
-    tagline?: string;
-    shortDescription: string;
-    description?: string;
-    types: {
-        id: string;
-        name: string;
-        description: React.ReactNode;
-        customPrice?: string;
-        noNutrition?: boolean;
-    }[];
-    images: {
-        id: string;
-        type: string;
-    }[];
-}
+import ShopItem from "./ShopItem.ts";
 
-const MenuItems: MenuItem[] = [
+const MenuItems: ShopItem[] = [
     {
         id: "BananaBread",
         name: "Banana 🍌",
@@ -27,26 +10,41 @@ const MenuItems: MenuItem[] = [
             {
                 id: "BananaBread",
                 name: "Plain 🍞",
-                //customPrice: "$3 Mini-Loaf • $10 Whole Loaf: Hallo-Weekend Sale!",
                 description: "Indulge in the ultimate treat with our mouthwatering banana bread! Made fresh right here at UW-Stout, this moist and flavorful delight is the perfect pick-me-up for busy students. Packed with real bananas and love, it's a delicious slice of home away from home.",
             },
             {
                 id: "ChocolateChip",
                 name: "Chocolate Chip 🍫",
-                //customPrice: "$3 Mini-Loaf • $10 Whole Loaf: Hallo-Weekend Sale!",
                 description: "Savor the best of both worlds with our delectable Chocolate Chip Banana Bread. Freshly baked here on campus, it's a delightful fusion of rich chocolate chips and ripe bananas. The perfect on-the-go snack for any student's sweet cravings.",
-            },
-            {
-                id: "GlutenFree",
-                name: "Gluten Free ⛔",
-                customPrice: "$12 Whole Loaf Only",
-                description: "For those with gluten allergies, we offer a gluten free option. Our gluten free banana bread is made with locally sourced bananas and baked to perfection. It's the perfect snack for any time of day.",
-            },
+            }
         ],
         images: [
             { id: "BananaBread", type: "BananaBread" },
-            { id: "ChocolateChip", type: "ChocolateChip" },
+            { id: "ChocolateChip", type: "ChocolateChip" }
+        ],
+    },
+    {
+        id: "GlutenFree",
+        name: "Gluten-Free Banana ⛔",
+        tagline: "Diet Friendly",
+        shortDescription: "The signature flavor, now Gluten-Free",
+        types: [
+            {
+                id: "GlutenFree",
+                name: "Plain 🍞",
+                customPrice: "$12 Whole Loaf Only",
+                description: "For those with gluten allergies, we offer a gluten free option. Our gluten free banana bread is made with locally sourced bananas and baked to perfection. It's the perfect snack for any time of day.",
+            },
+            {
+                id: "GlutenFreeChocolateChip",
+                name: "Chocolate Chip 🍫",
+                customPrice: "$12 Whole Loaf Only",
+                description: "For those with gluten allergies, we offer a gluten free option. Our gluten free, chocolate chip banana bread is made with fresh chocolate chips and locally sourced bananas. It's the perfect snack for any time of day.",
+            }
+        ],
+        images: [
             { id: "GlutenFree", type: "GlutenFree" },
+            { id: "GlutenFreeChocolateChip", type: "GlutenFreeChocolateChip" }
         ],
     },
     {
@@ -102,7 +100,7 @@ const MenuItems: MenuItem[] = [
     {
         id: "Apple",
         name: "Apple Cinnamon 🍎",
-        tagline: "Limited Time!",
+        tagline: "Season Favorite",
         shortDescription: "A taste of fall in every bite",
         types: [
             {
@@ -121,7 +119,7 @@ const MenuItems: MenuItem[] = [
     {
         id: "Pumpkin",
         name: "Pumpkin Cream Cheese 🎃",
-        tagline: "Limited Time!",
+        tagline: "Season Favorite",
         shortDescription: "A little halloween surprise",
         types: [
             {
@@ -143,15 +141,24 @@ const MenuItems: MenuItem[] = [
         types: [
             {
                 id: "Zucchini",
-                name: "Pumpkin Cream Cheese 🎃",
+                name: "Zucchini 🥒",
                 customPrice: "$4 Mini • $14 Regular Loaf",
-                description: "Zucchini Bread NOW AVAILABLE. Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
-                noNutrition: true,
+                description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
+            },
+            {
+                id: "ZucchiniChocolateChip",
+                name: "Zucchini Chocolate Chip 🍫",
+                customPrice: "$4 Mini • $14 Regular Loaf",
+                description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
             }
         ],
         images: [
             { id: "Zucchini", type: "Zucchini" },
+            { id: "Zucchini-2", type: "Zucchini" },
+            { id: "ZucchiniChocolateChip", type: "ZucchiniChocolateChip" },
+            { id: "ZucchiniChocolateChip-2", type: "ZucchiniChocolateChip" },
         ],
     },
 ];
+
 export default MenuItems;

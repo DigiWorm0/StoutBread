@@ -1,10 +1,10 @@
 import { Card } from "react-bootstrap";
 import React from "react";
 import MenuItemModal from "./MenuItemModal.tsx";
-import { MenuItem } from "../types/MenuItems.ts";
+import ShopItem from "../types/ShopItem.ts";
 
 export interface MenuItemProps {
-    item: MenuItem;
+    item: ShopItem;
 }
 
 export default function MenuItemCard(props: MenuItemProps) {
