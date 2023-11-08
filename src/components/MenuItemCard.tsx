@@ -20,7 +20,7 @@ export default function MenuItemCard(props: MenuItemProps) {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={() => setIsModalVisible(true)}
-                className={"m-1 card-hover"}
+                className={"m-1 card-hover rounded-4"}
                 style={{
                     width: 300,
                     transition: "all 0.2s",
@@ -32,6 +32,7 @@ export default function MenuItemCard(props: MenuItemProps) {
                 <Card.Img
                     variant={"top"}
                     src={imgURL}
+                    className={"rounded-top-4"}
                     style={{
                         maxHeight: 250,
                         objectFit: "cover",

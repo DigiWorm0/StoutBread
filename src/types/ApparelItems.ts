@@ -4,7 +4,7 @@ const ApparelItems: ShopItem[] = [
     {
         id: "Cap",
         name: "Baseball Cap",
-        tagline: "BRAND NEW!",
+        tagline: "$25",
         shortDescription: "Represent StoutBread with the official cap!",
         types: [
             {
@@ -22,7 +22,7 @@ const ApparelItems: ShopItem[] = [
     {
         id: "Beanie",
         name: "Carhartt Beanie",
-        tagline: "BRAND NEW!",
+        tagline: "$35",
         shortDescription: "Stay warm for the winter with our new Beanie!",
         types: [
             {
