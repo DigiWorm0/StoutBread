@@ -8,6 +8,10 @@ export default function BeholdEmbed() {
         script.src = SCRIPT_URL;
         script.async = true;
         document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        }
     }, []);
 
     return (

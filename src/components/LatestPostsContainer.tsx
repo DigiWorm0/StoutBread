@@ -4,9 +4,9 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 export default function LatestPostsContainer() {
     return (
-        <div className={"bg-light shadow pt-5 pb-5 mt-5"}>
+        <>
             <Container fluid>
-                <Row className={"ps-0 pe-0"}>
+                <Row className={"ps-0 pe-0 mt-5"}>
                     <Col className={"text-center"}>
                         <a
                             href={"https://www.instagram.com/uwstoutbread/"}
@@ -29,6 +29,6 @@ export default function LatestPostsContainer() {
                 </Row>
             </Container>
             <BeholdEmbed />
-        </div>
+        </>
     );
 }

@@ -1,9 +1,9 @@
-import { MenuItem } from "../types/MenuItems.ts";
 import ImageGallery from "react-image-gallery";
 import React from "react";
+import ShopItem from "../types/ShopItem.ts";
 
 export interface ItemGalleryProps {
-    item: MenuItem;
+    item: ShopItem;
     selectedTypeID: string;
     setSelectedTypeID: (typeID: string) => void;
 }

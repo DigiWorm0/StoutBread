@@ -30,6 +30,7 @@ export default function HeroHeader() {
                     <div className={"m-auto ms-3 d-none d-lg-block"}>
                         <a href={"#"} className={"nav-link-anim m-3"}>Home</a>
                         <a href={"#menu"} className={"nav-link-anim m-3"}>Menu</a>
+                        <a href={"#apparel"} className={"nav-link-anim m-3"}>Apparel</a>
                         <a href={"#posts"} className={"nav-link-anim m-3"}>Posts</a>
                     </div>
                 </div>
