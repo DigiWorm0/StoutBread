@@ -1,5 +1,3 @@
-import ImageGallery from "react-image-gallery";
-import React from "react";
 import ShopItem from "../types/ShopItem.ts";
 
 export interface ItemGalleryProps {
@@ -8,7 +6,8 @@ export interface ItemGalleryProps {
     setSelectedTypeID: (typeID: string) => void;
 }
 
-export default function ItemGallery(props: ItemGalleryProps) {
+export default function ItemGallery() {
+    /*
     const ref = React.useRef<ImageGallery>(null);
 
     // Scroll to selected type
@@ -50,4 +49,7 @@ export default function ItemGallery(props: ItemGalleryProps) {
             />
         </div>
     );
+    */
+    // TODO: Fix Me
+    return null;
 }

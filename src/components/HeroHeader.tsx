@@ -1,8 +1,6 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
-import { IoLogoVenmo } from "react-icons/io5";
-import { BiLogoPaypal } from "react-icons/bi";
-import { SiCashapp } from "react-icons/si";
-import { MINI_LOAF_PRICE, WHOLE_LOAF_PRICE } from "../types/Constants.ts";
+import {Button, Col, Container, Row} from "react-bootstrap";
+import {MINI_LOAF_PRICE, WHOLE_LOAF_PRICE} from "../types/Constants.ts";
+import PaymentIcons from "./Payment/PaymentIcons.tsx";
 
 export default function HeroHeader() {
     return (
@@ -45,38 +43,19 @@ export default function HeroHeader() {
                                 Free Delivery Around UW-Stout
                             </h4>
                             <h5 className={"d-block d-lg-none"}>
-                                ${MINI_LOAF_PRICE} Mini Loaf<br />
-                                ${WHOLE_LOAF_PRICE} Regular Loaf<br />
+                                ${MINI_LOAF_PRICE} Mini Loaf<br/>
+                                ${WHOLE_LOAF_PRICE} Regular Loaf<br/>
                                 Free Delivery Around UW-Stout
                             </h5>
                             <Button
                                 variant="primary"
                                 href={"https://www.instagram.com/uwstoutbread/"}
                                 className={"mt-3 mb-3 fs-5 fw-bold ps-5 pe-5"}
-                                style={{ width: 250 }}
+                                style={{width: 250}}
                             >
                                 DM to Order &gt;
                             </Button>
-                            <div className={"text-center m-auto m-lg-0"} style={{ width: 250 }}>
-                                <a
-                                    href={"https://venmo.com/code?user_id=3425859289481216550&created=1663906241.1685271&printed=1"}
-                                    className={"m-2 btn-muted"}
-                                >
-                                    <IoLogoVenmo size={32} />
-                                </a>
-                                <a
-                                    href={"https://www.paypal.me/Stoutbread?locale.x=en_US"}
-                                    className={"m-2 btn-muted"}
-                                >
-                                    <BiLogoPaypal size={32} />
-                                </a>
-                                <a
-                                    href={"https://cash.app/$StoutBread"}
-                                    className={"m-2 btn-muted"}
-                                >
-                                    <SiCashapp size={32} />
-                                </a>
-                            </div>
+                            <PaymentIcons/>
                         </Col>
                     </Row>
                 </Container>

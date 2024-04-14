@@ -1,9 +1,12 @@
-import { Col, Container, Row } from "react-bootstrap";
-import MenuItems from "../types/MenuItems.ts";
-import MenuItemCard from "./MenuItemCard.tsx";
-import { GiSlicedBread } from "react-icons/gi";
+import {Col, Container, Row} from "react-bootstrap";
+import {GiSlicedBread} from "react-icons/gi";
+import ShopItemCards from "./ShopItem/ShopItemCards.tsx";
+import useShopItemsOfType from "../hooks/useShopItemsOfType.ts";
+import {LuWheatOff} from "react-icons/lu";
 
 export default function MenuContainer() {
+    const itemIDs = useShopItemsOfType("Menu");
+
     return (
         <>
             <Container>
@@ -17,22 +20,29 @@ export default function MenuContainer() {
                         <h5 className={"text-primary fw-bold"}>
                             Our Menu
                         </h5>
-                        <h2 className={""}>
+                        <h2 className={"mb-0"}>
                             Stout Bread Delicacies
                         </h2>
-                        <hr />
+                        <small className={"text-muted"}>
+                            <LuWheatOff
+                                size={16}
+                                className={"mb-1 me-2"}
+                            />
+                            Gluten-free is available in full-loaves upon request
+
+                            <LuWheatOff
+                                size={16}
+                                className={"mb-1 ms-2"}
+                            />
+                        </small>
+                        <hr/>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <div className={"d-flex flex-wrap justify-content-center mt-3"}>
-                            {MenuItems.map((item, index) => (
-                                <MenuItemCard
-                                    key={index}
-                                    item={item}
-                                />
-                            ))}
-                        </div>
+                        <ShopItemCards
+                            itemIDs={itemIDs}
+                        />
                     </Col>
                 </Row>
             </Container>

@@ -1,18 +1,15 @@
+import ShopItemType from "./ShopItemType.ts";
+import ShopSubItem from "./ShopSubItem.ts";
+
+export type ShopItemID = string;
+
 export default interface ShopItem {
-    id: string;
+    id: ShopItemID;
     name: string;
-    tagline?: string;
+    price: string;
+    tagline: string;
     shortDescription: string;
     description?: string;
-    types: {
-        id: string;
-        name: string;
-        description: React.ReactNode;
-        customPrice?: string;
-        noNutrition?: boolean;
-    }[];
-    images: {
-        id: string;
-        type: string;
-    }[];
+    subitems?: ShopSubItem[];
+    type: ShopItemType;
 }
