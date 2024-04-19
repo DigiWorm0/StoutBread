@@ -1,5 +1,4 @@
 import ShopItemType from "./ShopItemType.ts";
-import ShopSubItem from "./ShopSubItem.ts";
 
 export type ShopItemID = string;
 
@@ -10,6 +9,6 @@ export default interface ShopItem {
     tagline: string;
     shortDescription: string;
     description?: string;
-    subitems?: ShopSubItem[];
+    imageIDs: string[];
     type: ShopItemType;
 }

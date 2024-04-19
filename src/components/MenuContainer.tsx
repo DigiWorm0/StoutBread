@@ -25,15 +25,11 @@ export default function MenuContainer() {
                         </h2>
                         <small className={"text-muted"}>
                             <LuWheatOff
-                                size={16}
-                                className={"mb-1 me-2"}
+                                size={12}
+                                style={{marginBottom: 2}}
+                                className={"me-1"}
                             />
                             Gluten-free is available in full-loaves upon request
-
-                            <LuWheatOff
-                                size={16}
-                                className={"mb-1 ms-2"}
-                            />
                         </small>
                         <hr/>
                     </Col>
