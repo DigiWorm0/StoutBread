@@ -9,10 +9,7 @@ export interface OrderModalProps {
 }
 
 export default function OrderModal(props: OrderModalProps) {
-    const {
-        isVisible,
-        setIsVisible,
-    } = props;
+    const {isVisible, setIsVisible} = props;
 
     return (
         <Modal
@@ -42,24 +39,31 @@ export default function OrderModal(props: OrderModalProps) {
                         className={"text-warning d-block mb-1"}
                     />
                     <h4 className={"fw-bold m-2"}>
-                        You're Leaving StoutBread
+                        You're Leaving<br/>Stout Bread
                     </h4>
                     <p className={"mt-2 mb-3"}>
-                        All ordering is done through Instagram DMs. Payment is accepted through Venmo,
-                        PayPal,
-                        CashApp, Tap to Pay (Debit/Credit), and Cash.
+                        All ordering is done through Instagram DMs.
+                        Payment is accepted through Venmo, CashApp, Paypal, tap-to-pay, or cash.
                     </p>
                     <Button
                         variant={"primary"}
                         target={"_blank"}
                         onClick={() => setIsVisible(false)}
                         href={"https://ig.me/m/stout.bread?ref=stoutbread-com"}
-                        className={"fw-bold float-end w-100 mt-1 mt-lg-0 mb-4"}
+                        className={"fw-bold float-end w-100 mt-1 mt-lg-0"}
                     >
-                        @Stout.Bread
+                        DM @Stout.Bread
                         <FiExternalLink
                             className={"ms-1 mb-1"}
                         />
+                    </Button>
+                    <Button
+                        size={"sm"}
+                        variant={"link"}
+                        onClick={() => setIsVisible(false)}
+                        className={"fw-bold w-100 link-secondary text-decoration-none"}
+                    >
+                        Cancel
                     </Button>
                 </div>
             </Modal.Body>

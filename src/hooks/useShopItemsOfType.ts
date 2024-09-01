@@ -1,4 +1,4 @@
-import ShopItemDB from "../types/ShopItemDB.ts";
+import ShopItemDB from "../db/ShopItemDB.ts";
 import React from "react";
 import ShopItemType from "../types/ShopItemType.ts";
 

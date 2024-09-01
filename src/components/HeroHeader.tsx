@@ -7,6 +7,7 @@ export default function HeroHeader() {
         <div
             style={{
                 backgroundImage: "url(/images/Background.png)",
+                boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 10px",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",

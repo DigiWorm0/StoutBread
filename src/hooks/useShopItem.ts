@@ -1,5 +1,5 @@
 import {ShopItemID} from "../types/ShopItem.ts";
-import ShopItemDB from "../types/ShopItemDB.ts";
+import ShopItemDB from "../db/ShopItemDB.ts";
 import React from "react";
 
 export default function useShopItem(id?: ShopItemID) {

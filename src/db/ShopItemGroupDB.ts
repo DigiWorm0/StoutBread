@@ -1,4 +1,4 @@
-import ShopItemGroup from "./ShopItemGroup.ts";
+import ShopItemGroup from "../types/ShopItemGroup.ts";
 
 const ShopItemGroupDB: ShopItemGroup[] = [
     [

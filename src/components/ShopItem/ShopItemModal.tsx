@@ -3,11 +3,11 @@ import {AiOutlineClose, AiOutlineInstagram} from "react-icons/ai";
 import {ShopItemID} from "../../types/ShopItem.ts";
 import ItemTypePicker from "./ItemTypePicker.tsx";
 import useShopItem from "../../hooks/useShopItem.ts";
-import FormattedText from "../Generic/FormattedText.tsx";
+import FormattedText from "../Common/FormattedText.tsx";
 import {FaCarSide} from "react-icons/fa";
 import ItemGallery from "../ItemGallery.tsx";
 import React from "react";
-import OrderModal from "../OrderModal.tsx";
+import OrderModal from "./OrderModal.tsx";
 
 export interface ShopItemModalProps {
     itemID?: ShopItemID;
