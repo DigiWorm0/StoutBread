@@ -7,50 +7,55 @@ const ShopItemDB: ShopItem[] = [
         id: "BananaBread",
         name: "Banana 🍌",
         tagline: "Classic",
-        shortDescription: "The signature flavor",
+        shortDescription: "Our signature flavor",
         description: "Indulge in the ultimate treat with our mouthwatering banana bread! Made fresh right here at UW-Stout, this moist and flavorful delight is the perfect pick-me-up for busy students. Packed with real bananas and love, it's a delicious slice of home away from home.",
         type: "Menu",
         imageIDs: ["BananaBread"],
-        price: BREAD_PRICE
+        price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "BananaChocolateChip",
         name: "Banana Chocolate Chip 🍫",
         tagline: "Classic",
-        shortDescription: "The signature flavor",
+        shortDescription: "Our signature flavor",
         description: "Savor the best of both worlds with our delectable Chocolate Chip Banana Bread. Freshly baked here on campus, it's a delightful fusion of rich chocolate chips and ripe bananas. The perfect on-the-go snack for any student's sweet cravings.",
         type: "Menu",
-        imageIDs: ["BananaChocChip"],
-        price: BREAD_PRICE
+        imageIDs: ["BananaChocChip", "secondary/BananaChocolateChip"],
+        price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "BananaWalnut",
         name: "Banana Walnut 🥜",
         tagline: "Season Favorite",
         shortDescription: "A nutty twist on the classic banana bread",
-        description: "Experience a delightful crunch in every bite with our Banana Walnut Bread. It's a harmonious blend of ripe bananas and premium walnuts. A tasty tread for students and squirrels alike",
+        description: "Experience a delightful crunch in every bite with our Banana Walnut Bread. It's a harmonious blend of ripe bananas and premium walnuts. A tasty tread for students and squirrels alike.",
         type: "Menu",
-        imageIDs: ["BananaWalnut"],
-        price: BREAD_PRICE
+        imageIDs: ["BananaWalnut", "secondary/BananaWalnut", "secondary/BananaWalnut-2"],
+        price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "LemonPoppyseed",
         name: "Lemon Poppyseed 🍋",
         tagline: "Unique Flavor",
         shortDescription: "A refreshing twist on the classic bread",
-        description: "Elevate your taste buds with our zesty Lemon Poppyseed Bread. Tangy lemon zest and delicate poppy seeds create a perfect balance of flavors and textures",
+        description: "Elevate your taste buds with our zesty Lemon Poppyseed Bread. Tangy lemon zest and delicate poppy seeds create a perfect balance of flavors and textures.",
         type: "Menu",
-        imageIDs: ["LemonPoppyseed", "LemonPoppyseed-Mini"],
+        imageIDs: ["LemonPoppyseed", "LemonPoppyseed-Mini", "secondary/LemonPoppyseed", "secondary/LemonPoppyseed-2"],
         price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "LemonBlueberry",
         name: "Lemon Blueberry 🫐",
         tagline: "Unique Flavor",
         shortDescription: "A refreshing twist on the classic bread",
+        description: "A delightful blend of zesty lemon and juicy blueberries, this moist and flavorful bread is perfect for any occasion. With a soft, tender crumb and a burst of fruity freshness in every bite, it's great for breakfast, dessert, or a sweet snack. Drizzled with a light lemon glaze, this loaf brings a touch of brightness and sweetness that’s sure to please!",
         type: "Menu",
         imageIDs: ["LemonBlueberry-Mini"],
-        price: BREAD_PRICE,
+        price: BREAD_PRICE
     },
     {
         id: "CinnamonSugar",
@@ -61,16 +66,18 @@ const ShopItemDB: ShopItem[] = [
         type: "Menu",
         imageIDs: ["Cinnamon", "Cinnamon-Mini"],
         price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "Apple",
         name: "Apple Cinnamon 🍎",
         tagline: "Season Favorite",
         shortDescription: "A taste of fall in every bite",
-        description: "For a limited time only, savor the seasonal delight of our Apple Cinnamon Bread, fresh from our campus ovens. Experience the warmth of autumn with every bite, as tender apples and aromatic cinnamon come together to create a taste that's as fleeting as the season itself. Don't miss out on this delectable treat!",
+        description: "Savor the seasonal delight of our Apple Cinnamon Bread, fresh from our campus ovens. Experience the warmth of autumn with every bite, as tender apples and aromatic cinnamon come together to create a taste that's as fleeting as the season itself. Don't miss out on this delectable treat!",
         type: "Menu",
-        imageIDs: ["AppleCinnamon", "AppleCinnamon-Mini", "secondary/Apple", "secondary/Apple-2"],
+        imageIDs: ["AppleCinnamon", "AppleCinnamon-Mini", "secondary/Apple", "secondary/Apple-2", "secondary/Apple-3"],
         price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "Pumpkin",
@@ -79,8 +86,9 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "A little halloween surprise",
         description: "Fall in love with the flavors of the season with our limited-time Pumpkin Cream Cheese Bread. Embrace the essence of autumn as rich, spiced pumpkin bread meets a luscious cream cheese swirl. It's a seasonal delight you won't want to miss – indulge in the taste of fall today!",
         type: "Menu",
-        imageIDs: ["PumpkinCreamCheese", "PumpkinCreamCheese-Mini"],
+        imageIDs: ["PumpkinCreamCheese", "PumpkinCreamCheese-Mini", "secondary/Pumpkin", "secondary/Pumpkin"],
         price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "Zucchini",
@@ -89,8 +97,9 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "A fruity taste of Wisconsin",
         description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
         type: "Menu",
-        imageIDs: ["Zucchini", "Zucchini-Mini"],
-        price: BREAD_PRICE
+        imageIDs: ["Zucchini", "Zucchini-Mini", "secondary/Zucchini"],
+        price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "ZucchiniChocolateChip",
@@ -99,8 +108,9 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "A fruity taste of Wisconsin",
         description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
         type: "Menu",
-        imageIDs: ["ZucchiniChocChip", "ZucchiniChocChip-Mini"],
-        price: BREAD_PRICE
+        imageIDs: ["ZucchiniChocChip", "ZucchiniChocChip-Mini", "secondary/ZucchiniChocolateChip"],
+        price: BREAD_PRICE,
+        nutritionFacts: true
     },
     {
         id: "ZucchiniWalnut",
@@ -109,7 +119,7 @@ const ShopItemDB: ShopItem[] = [
         tagline: "New Flavor!",
         shortDescription: "A fruity taste of Wisconsin",
         type: "Menu",
-        imageIDs: [],
+        imageIDs: ["ZucchiniWalnut"],
         price: BREAD_PRICE
     },
 
@@ -142,7 +152,7 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The winter essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Apparel",
-        imageIDs: ["Crewneck"],
+        imageIDs: ["Crewneck", "Crewneck-2", "Crewneck-3", "Crewneck-4"],
         price: "$30"
     },
     {
@@ -152,7 +162,7 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The winter essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Hidden",
-        imageIDs: ["Crewneck"],
+        imageIDs: ["Crewneck", "Crewneck-2", "Crewneck-3", "Crewneck-4"],
         price: "$30"
     },
     {
@@ -162,7 +172,7 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The winter essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Hidden",
-        imageIDs: ["Crewneck"],
+        imageIDs: ["Crewneck", "Crewneck-2", "Crewneck-3", "Crewneck-4"],
         price: "$30"
     },
 

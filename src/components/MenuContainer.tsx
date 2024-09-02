@@ -2,7 +2,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import {GiSlicedBread} from "react-icons/gi";
 import ShopItemCards from "./ShopItem/ShopItemCards.tsx";
 import useShopItemsOfType from "../hooks/useShopItemsOfType.ts";
-import {LuWheatOff} from "react-icons/lu";
+import {LuNutOff, LuWheatOff} from "react-icons/lu";
 
 export default function MenuContainer() {
     const itemIDs = useShopItemsOfType("Menu");
@@ -23,6 +23,15 @@ export default function MenuContainer() {
                         <h2 className={"mb-0"}>
                             Stout Bread Delicacies
                         </h2>
+                        <small className={"text-muted"}>
+                            <LuNutOff
+                                size={12}
+                                style={{marginBottom: 2}}
+                                className={"me-1"}
+                            />
+                            If you have allergies, please enquire before ordering
+                        </small>
+                        <br/>
                         <small className={"text-muted"}>
                             <LuWheatOff
                                 size={12}

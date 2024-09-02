@@ -92,6 +92,16 @@ export default function ShopItemModal(props: ShopItemModalProps) {
                                             <FormattedText>
                                                 {item?.description}
                                             </FormattedText>
+                                            {item?.nutritionFacts && (
+                                                <Button
+                                                    variant={"link"}
+                                                    href={`/images/nutrition/${item.id}.png`}
+                                                    target={"_blank"}
+                                                    className={"fw-bold link-primary text-decoration-none mt-0 pt-0"}
+                                                >
+                                                    Nutritional Facts
+                                                </Button>
+                                            )}
                                         </Col>
                                     </Row>
                                     <Row>

@@ -11,4 +11,5 @@ export default interface ShopItem {
     description?: string;
     imageIDs: string[];
     type: ShopItemType;
+    nutritionFacts?: boolean;
 }

@@ -39,11 +39,11 @@ export default function OrderModal(props: OrderModalProps) {
                         className={"text-warning d-block mb-1"}
                     />
                     <h4 className={"fw-bold m-2"}>
-                        You're Leaving<br/>Stout Bread
+                        You're Leaving<br/>StoutBread
                     </h4>
                     <p className={"mt-2 mb-3"}>
                         All ordering is done through Instagram DMs.
-                        Payment is accepted through Venmo, CashApp, Paypal, tap-to-pay, or cash.
+                        Payment is accepted through Venmo, CashApp, PayPal, tap-to-pay, or cash.
                     </p>
                     <Button
                         variant={"primary"}
