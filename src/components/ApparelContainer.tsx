@@ -1,9 +1,11 @@
-import { Col, Container, Row } from "react-bootstrap";
-import MenuItemCard from "./MenuItemCard.tsx";
-import ApparelItems from "../types/ApparelItems.ts";
-import { FaShirt } from "react-icons/fa6";
+import {Col, Container, Row} from "react-bootstrap";
+import {FaShirt} from "react-icons/fa6";
+import ShopItemCards from "./ShopItem/ShopItemCards.tsx";
+import useShopItemsOfType from "../hooks/useShopItemsOfType.ts";
 
 export default function ApparelContainer() {
+    const itemIDs = useShopItemsOfType("Apparel");
+
     return (
         <div className={"bg-light shadow-sm pt-5 pb-5 mt-5"}>
             <Container>
@@ -23,19 +25,14 @@ export default function ApparelContainer() {
                         <p className={"text-muted"}>
                             All profits from apparel sales are donated to the Blue Devil Robotics club at UW-Stout
                         </p>
-                        <hr />
+                        <hr/>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <div className={"d-flex flex-wrap justify-content-center mt-3"}>
-                            {ApparelItems.map((item, index) => (
-                                <MenuItemCard
-                                    key={index}
-                                    item={item}
-                                />
-                            ))}
-                        </div>
+                        <ShopItemCards
+                            itemIDs={itemIDs}
+                        />
                     </Col>
                 </Row>
             </Container>

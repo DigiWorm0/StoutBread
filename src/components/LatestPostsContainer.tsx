@@ -1,6 +1,6 @@
-import { Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import BeholdEmbed from "./BeholdEmbed.tsx";
-import { AiOutlineInstagram } from "react-icons/ai";
+import {AiOutlineInstagram} from "react-icons/ai";
 
 export default function LatestPostsContainer() {
     return (
@@ -9,7 +9,7 @@ export default function LatestPostsContainer() {
                 <Row className={"ps-0 pe-0 mt-5"}>
                     <Col className={"text-center"}>
                         <a
-                            href={"https://www.instagram.com/uwstoutbread/"}
+                            href={"https://www.instagram.com/stout.bread/"}
                             className={"text-decoration-none text-dark"}
                         >
                             <AiOutlineInstagram
@@ -21,14 +21,14 @@ export default function LatestPostsContainer() {
                                 Latest Posts
                             </h5>
                             <h2 className={""}>
-                                @UWStoutBread
+                                @Stout.Bread
                             </h2>
                         </a>
-                        <hr />
+                        <hr/>
                     </Col>
                 </Row>
             </Container>
-            <BeholdEmbed />
+            <BeholdEmbed/>
         </>
     );
 }
