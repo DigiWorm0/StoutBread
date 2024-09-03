@@ -1,8 +1,9 @@
 import {Button, Col, Container, Row} from "react-bootstrap";
-import {MINI_LOAF_PRICE, WHOLE_LOAF_PRICE} from "../types/Constants.ts";
-import PaymentIcons from "./Payment/PaymentIcons.tsx";
+import {MINI_LOAF_PRICE, WHOLE_LOAF_PRICE} from "../../types/Constants.ts";
+import PaymentIcons from "../Payment/PaymentIcons.tsx";
 import React from "react";
-import OrderModal from "./ShopItem/OrderModal.tsx";
+import OrderModal from "../ShopItem/OrderModal.tsx";
+import NavLink from "./NavLink.tsx";
 
 export default function HeroHeader() {
     const [isOrderModalVisible, setOrderModalVisible] = React.useState(false);
@@ -10,6 +11,7 @@ export default function HeroHeader() {
     return (
         <>
             <div
+                id={"top"}
                 style={{
                     backgroundImage: "url(/images/Background.png)",
                     boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 10px",
@@ -32,10 +34,10 @@ export default function HeroHeader() {
                             />
                         </div>
                         <div className={"m-auto ms-3 d-none d-lg-block"}>
-                            <a href={"#"} className={"nav-link-anim m-3"}>Home</a>
-                            <a href={"#menu"} className={"nav-link-anim m-3"}>Menu</a>
-                            <a href={"#apparel"} className={"nav-link-anim m-3"}>Apparel</a>
-                            <a href={"#posts"} className={"nav-link-anim m-3"}>Posts</a>
+                            <NavLink targetID={"top"}>Home</NavLink>
+                            <NavLink targetID={"menu"}>Menu</NavLink>
+                            <NavLink targetID={"apparel"}>Apparel</NavLink>
+                            <NavLink targetID={"posts"}>Posts</NavLink>
                         </div>
                     </div>
                     <Container className={"ms-lg-3 mt-4 mb-md-5"}>
