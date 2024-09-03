@@ -1,4 +1,4 @@
-import HeroHeader from "../components/HeroHeader.tsx";
+import HeroHeader from "../components/Hero/HeroHeader.tsx";
 import LatestPostsContainer from "../components/LatestPostsContainer.tsx";
 import MenuContainer from "../components/MenuContainer.tsx";
 import Footer from "../components/Footer.tsx";

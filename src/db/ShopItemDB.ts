@@ -1,6 +1,7 @@
 import ShopItem from "../types/ShopItem.ts";
 
 const BREAD_PRICE = "$3 Mini Loaf • $12 Regular Loaf";
+const FULL_LOAF_PRICE = "$14 Full Loaf Only";
 
 const ShopItemDB: ShopItem[] = [
     {
@@ -35,6 +36,38 @@ const ShopItemDB: ShopItem[] = [
         imageIDs: ["BananaWalnut", "secondary/BananaWalnut", "secondary/BananaWalnut-2"],
         price: BREAD_PRICE,
         nutritionFacts: true
+    },
+    {
+        id: "Zucchini",
+        name: "Zucchini 🥒",
+        tagline: "New Flavor!",
+        shortDescription: "A fruity taste of Wisconsin",
+        description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
+        type: "Menu",
+        imageIDs: ["Zucchini", "Zucchini-Mini", "secondary/Zucchini"],
+        price: BREAD_PRICE,
+        nutritionFacts: true
+    },
+    {
+        id: "ZucchiniChocolateChip",
+        name: "Zucchini Chocolate Chip 🍫",
+        tagline: "New Flavor!",
+        shortDescription: "A fruity taste of Wisconsin",
+        description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
+        type: "Menu",
+        imageIDs: ["ZucchiniChocChip", "ZucchiniChocChip-Mini", "secondary/ZucchiniChocolateChip"],
+        price: BREAD_PRICE,
+        nutritionFacts: true
+    },
+    {
+        id: "ZucchiniWalnut",
+        name: "Zucchini Walnut 🥜",
+        description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
+        tagline: "New Flavor!",
+        shortDescription: "A fruity taste of Wisconsin",
+        type: "Menu",
+        imageIDs: ["ZucchiniWalnut"],
+        price: BREAD_PRICE
     },
     {
         id: "LemonPoppyseed",
@@ -76,7 +109,7 @@ const ShopItemDB: ShopItem[] = [
         description: "Savor the seasonal delight of our Apple Cinnamon Bread, fresh from our campus ovens. Experience the warmth of autumn with every bite, as tender apples and aromatic cinnamon come together to create a taste that's as fleeting as the season itself. Don't miss out on this delectable treat!",
         type: "Menu",
         imageIDs: ["AppleCinnamon", "AppleCinnamon-Mini", "secondary/Apple", "secondary/Apple-2", "secondary/Apple-3"],
-        price: BREAD_PRICE,
+        price: FULL_LOAF_PRICE,
         nutritionFacts: true
     },
     {
@@ -87,40 +120,8 @@ const ShopItemDB: ShopItem[] = [
         description: "Fall in love with the flavors of the season with our limited-time Pumpkin Cream Cheese Bread. Embrace the essence of autumn as rich, spiced pumpkin bread meets a luscious cream cheese swirl. It's a seasonal delight you won't want to miss – indulge in the taste of fall today!",
         type: "Menu",
         imageIDs: ["PumpkinCreamCheese", "PumpkinCreamCheese-Mini", "secondary/Pumpkin", "secondary/Pumpkin"],
-        price: BREAD_PRICE,
+        price: FULL_LOAF_PRICE,
         nutritionFacts: true
-    },
-    {
-        id: "Zucchini",
-        name: "Zucchini 🥒",
-        tagline: "New Flavor!",
-        shortDescription: "A fruity taste of Wisconsin",
-        description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
-        type: "Menu",
-        imageIDs: ["Zucchini", "Zucchini-Mini", "secondary/Zucchini"],
-        price: BREAD_PRICE,
-        nutritionFacts: true
-    },
-    {
-        id: "ZucchiniChocolateChip",
-        name: "Zucchini Chocolate Chip 🍫",
-        tagline: "New Flavor!",
-        shortDescription: "A fruity taste of Wisconsin",
-        description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
-        type: "Menu",
-        imageIDs: ["ZucchiniChocChip", "ZucchiniChocChip-Mini", "secondary/ZucchiniChocolateChip"],
-        price: BREAD_PRICE,
-        nutritionFacts: true
-    },
-    {
-        id: "ZucchiniWalnut",
-        name: "Zucchini Walnut 🥜",
-        description: "Zucchini Bread is NOW AVAILABLE! Y’all have asked and we delivered. Flavorful loaves baked with freshly shredded Zucchini. What are you waiting for? Order one now!",
-        tagline: "New Flavor!",
-        shortDescription: "A fruity taste of Wisconsin",
-        type: "Menu",
-        imageIDs: ["ZucchiniWalnut"],
-        price: BREAD_PRICE
     },
 
     // Apparel
