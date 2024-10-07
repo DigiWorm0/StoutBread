@@ -132,7 +132,7 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The summer essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Apparel",
-        imageIDs: ["Snapback"],
+        imageIDs: ["Snapback", "Snapback-Black", "Snapback-Gray"],
         price: "$25"
     },
     {
@@ -142,39 +142,8 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The summer essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Hidden",
-        imageIDs: ["Snapback"],
+        imageIDs: ["Snapback", "Snapback-Black", "Snapback-Gray"],
         price: "$25"
-    },
-
-    {
-        id: "Crewneck-M",
-        name: "Crewneck Sweatshirt",
-        tagline: "Stay warm",
-        shortDescription: "The winter essential",
-        description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
-        type: "Apparel",
-        imageIDs: ["Crewneck", "Crewneck-2", "Crewneck-3", "Crewneck-4"],
-        price: "$30"
-    },
-    {
-        id: "Crewneck-L",
-        name: "Crewneck Sweatshirt",
-        tagline: "Stay warm",
-        shortDescription: "The winter essential",
-        description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
-        type: "Hidden",
-        imageIDs: ["Crewneck", "Crewneck-2", "Crewneck-3", "Crewneck-4"],
-        price: "$30"
-    },
-    {
-        id: "Crewneck-XL",
-        name: "Crewneck Sweatshirt",
-        tagline: "Stay warm",
-        shortDescription: "The winter essential",
-        description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
-        type: "Hidden",
-        imageIDs: ["Crewneck", "Crewneck-2", "Crewneck-3", "Crewneck-4"],
-        price: "$30"
     },
 
     {
@@ -184,7 +153,7 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The winter essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Apparel",
-        imageIDs: ["Beanie"],
+        imageIDs: ["Beanie", "Beanie-Black", "Beanie-DarkGray", "Beanie-LightGray"],
         price: "$35"
     },
     {
@@ -194,7 +163,7 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The winter essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Hidden",
-        imageIDs: ["Beanie"],
+        imageIDs: ["Beanie", "Beanie-Black", "Beanie-DarkGray", "Beanie-LightGray"],
         price: "$35"
     },
     {
@@ -204,9 +173,40 @@ const ShopItemDB: ShopItem[] = [
         shortDescription: "The winter essential",
         description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
         type: "Hidden",
-        imageIDs: ["Beanie"],
+        imageIDs: ["Beanie", "Beanie-Black", "Beanie-DarkGray", "Beanie-LightGray"],
         price: "$35"
-    }
+    },
+
+    {
+        id: "Crewneck-M",
+        name: "Crewneck Sweatshirt",
+        tagline: "Stay warm",
+        shortDescription: "The winter essential",
+        description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
+        type: "Apparel",
+        imageIDs: ["Crewneck", "Crewneck-2"],
+        price: "$30"
+    },
+    {
+        id: "Crewneck-L",
+        name: "Crewneck Sweatshirt",
+        tagline: "Stay warm",
+        shortDescription: "The winter essential",
+        description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
+        type: "Hidden",
+        imageIDs: ["Crewneck", "Crewneck-2"],
+        price: "$30"
+    },
+    {
+        id: "Crewneck-XL",
+        name: "Crewneck Sweatshirt",
+        tagline: "Stay warm",
+        shortDescription: "The winter essential",
+        description: "WE HAVE MERCH! Represent Stout Bread with the official baseball cap. All profits are donated to the Blue Devil Robotics club on campus. Pickup or Delivery is also available.",
+        type: "Hidden",
+        imageIDs: ["Crewneck", "Crewneck-2"],
+        price: "$30"
+    },
 ];
 
 export default ShopItemDB;
