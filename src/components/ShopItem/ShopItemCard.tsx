@@ -12,7 +12,7 @@ export default function ShopItemCard(props: ShopItemProps) {
     const item = useShopItem(props.itemID);
     const [isHovered, setIsHovered] = React.useState(false);
 
-    const imgURL = `/images/shop/${item?.imageIDs[0] ?? "placeholder"}.jpg`;
+    const thumbnailURL = `/images/shop/${item?.imageIDs[0] ?? "placeholder"}_thumb.jpg`;
 
     return (
         <Card
@@ -30,7 +30,7 @@ export default function ShopItemCard(props: ShopItemProps) {
         >
             <Card.Img
                 variant={"top"}
-                src={imgURL}
+                src={thumbnailURL}
                 className={"rounded-top-4"}
                 style={{
                     maxHeight: 250,
