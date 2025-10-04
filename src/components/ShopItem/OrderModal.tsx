@@ -41,16 +41,18 @@ export default function OrderModal(props: OrderModalProps) {
                     <h4 className={"fw-bold m-2"}>
                         You're Leaving<br/>StoutBread
                     </h4>
-                    <p className={"mt-2 mb-3"}>
-                        All ordering is done through Instagram DMs.
-                        Payment is accepted through Venmo, CashApp, PayPal, tap-to-pay, or cash.
+                    <p className={"m-1"}>
+                        🤖 All ordering is done through BreadBot in Instagram DMs.
+                    </p>
+                    <p className={"m-1"}>
+                        💵 Payment is accepted through Venmo, CashApp, PayPal, tap-to-pay, or cash.
                     </p>
                     <Button
                         variant={"primary"}
                         target={"_blank"}
                         onClick={() => setIsVisible(false)}
                         href={"https://ig.me/m/stout.bread?ref=stoutbread-com"}
-                        className={"fw-bold float-end w-100 mt-1 mt-lg-0"}
+                        className={"fw-bold float-end w-100 mt-3"}
                     >
                         DM @Stout.Bread
                         <FiExternalLink

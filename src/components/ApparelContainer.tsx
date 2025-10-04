@@ -8,7 +8,7 @@ export default function ApparelContainer() {
     const itemIDs = useShopItemsOfType("Apparel");
 
     return (
-        <div className={"bg-light shadow-sm pt-5 pb-4 mt-5"}>
+        <div className={"bg-body-tertiary shadow-sm pt-5 pb-4 mt-5"}>
             <Container>
                 <Row>
                     <Col className={"text-center"}>
