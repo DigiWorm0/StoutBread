@@ -1,5 +1,4 @@
 import {Button, Col, Container, Row} from "react-bootstrap";
-import {MINI_LOAF_PRICE, WHOLE_LOAF_PRICE} from "../../types/Constants.ts";
 import PaymentIcons from "../Payment/PaymentIcons.tsx";
 import React from "react";
 import OrderModal from "../ShopItem/OrderModal.tsx";
@@ -47,12 +46,12 @@ export default function HeroHeader() {
                                     We bake <b className={"text-primary"}>Bread</b>
                                 </h1>
                                 <h4 className={"d-none d-lg-block"}>
-                                    ${MINI_LOAF_PRICE} Mini Loaf &bull; ${WHOLE_LOAF_PRICE} Regular Loaf &bull;
+                                    $4 Mini Loaf &bull; $14 Regular Loaf &bull;
                                     Free Delivery Around UW-Stout
                                 </h4>
                                 <h5 className={"d-block d-lg-none"}>
-                                    ${MINI_LOAF_PRICE} Mini Loaf<br/>
-                                    ${WHOLE_LOAF_PRICE} Regular Loaf<br/>
+                                    $4 Mini Loaf<br/>
+                                    $14 Regular Loaf<br/>
                                     Free Delivery Around UW-Stout
                                 </h5>
                                 <Button

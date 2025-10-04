@@ -20,18 +20,17 @@ export default function ItemGallery(props: ItemGalleryProps) {
     }, [item]);
 
     return (
-        <div style={{aspectRatio: "1/1", width: "100%"}}>
+        <div className={"d-flex justify-content-center align-items-center h-100"}>
             <ImageGallery
                 items={items}
                 slideDuration={200}
                 autoPlay={false}
                 showPlayButton={false}
-                showFullscreenButton={false}
+                showFullscreenButton={true}
                 showNav={true}
                 showThumbnails={false}
                 showBullets={true}
                 lazyLoad={false}
-                additionalClass={"rounded overflow-hidden"}
             />
         </div>
     );

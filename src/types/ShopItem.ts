@@ -9,7 +9,10 @@ export default interface ShopItem {
     tagline: string;
     shortDescription: string;
     description?: string;
+
+    thumbnailID?: string;
     imageIDs: string[];
+
     type: ShopItemType;
     nutritionFacts?: boolean;
 }

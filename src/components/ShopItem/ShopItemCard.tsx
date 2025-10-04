@@ -12,7 +12,7 @@ export default function ShopItemCard(props: ShopItemProps) {
     const item = useShopItem(props.itemID);
     const [isHovered, setIsHovered] = React.useState(false);
 
-    const thumbnailURL = `/images/shop/${item?.imageIDs[0] ?? "placeholder"}_thumb.jpg`;
+    const thumbnailURL = `/images/shop/${item?.thumbnailID ?? "placeholder"}.jpg`;
 
     return (
         <Card

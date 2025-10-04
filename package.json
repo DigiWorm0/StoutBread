@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@behold/react": "^0.1.10",
 		"bootstrap": "^5.3.1",
+		"jotai": "^2.15.0",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.8.0",
 		"react-dom": "^18.2.0",
@@ -37,7 +38,7 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.3",
 		"typescript": "^5.0.2",
-		"vite": "^4.4.5"
+		"vite": "^7.1.9"
 	},
 	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

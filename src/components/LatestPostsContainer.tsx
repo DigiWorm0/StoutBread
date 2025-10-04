@@ -10,7 +10,7 @@ export default function LatestPostsContainer() {
                     <Col className={"text-center"}>
                         <a
                             href={"https://www.instagram.com/stout.bread/"}
-                            className={"text-decoration-none text-dark"}
+                            className={"text-decoration-none text-body"}
                         >
                             <AiOutlineInstagram
                                 id={"posts"}
